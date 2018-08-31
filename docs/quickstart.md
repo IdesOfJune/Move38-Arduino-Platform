@@ -2,8 +2,8 @@
 
 
 ## What’s Included
-- 6x Blinks 
-  - 6x custom PCBs, 
+- 6x Blinks
+  - 6x custom PCBs,
   - 6x 3D printed bases  
   - 6x 12 polarity aligned magnets
   - 6x CR2032 coin cell batteries
@@ -16,17 +16,16 @@
   - 1x USB mini cable (3’)
 
 
-- Service Port (used for Serial Monitor) 
+- Service Port (used for Serial Monitor)
   - 1x Blinks Serial Adapter
-  - 1x FTDI board (Red w/ usb on one side and 6 pins on the other) 
+  - 1x FTDI board (Red w/ usb on one side and 6 pins on the other)
   - 1x Molex cable (4 black wires)
   - 1x USB mini cable (6”)
 
 
 ## Needed Software
-
-Arduino IDE - [Download it here](https://www.arduino.cc/en/Main/Software)
-Blinks Library - [Download it here](https://move38.com/attic/blinks/Move38-Blinks-Library.zip)
+- Arduino IDE - [Download it here](https://www.arduino.cc/en/Main/Software)
+- Blinks Library - [Download it here](https://github.com/Move38/Move38-Arduino-Platform/zipball/master)
 
 *If you want to have the latest and contribute to the development of Blinks, here’s our [Github Repo](https://github.com/Move38/Move38-Arduino-Platform/tree/dev)
 
@@ -36,11 +35,11 @@ Blinks Library - [Download it here](https://move38.com/attic/blinks/Move38-Blink
 After you have installed the Arduino IDE (> 1.8.5) and launched the application, you will notice that Arduino has created a folder in your `Documents` folder, aptly named, `Arduino`. Follow these next 5 steps to have the Blinks library installed:
 
 
-1. Create a folder called ‘hardware’ inside of the Arduino folder `~/Documents/Arduino/hardware` (it will be next to ‘libraries’, not nested inside)
+1. Create a folder called `hardware` inside of the Arduino folder `~/Documents/Arduino/hardware` (it will be next to ‘libraries’, not nested inside) and one more called `Move38-Blinks-Library` inside of the hardware folder you just created. `~/Documents/Arduino/hardware/Move38-Blinks-Library`
 2. Download the Blinks Library if you haven’t already done so
-3. Unzip the Blinks Library
-4. Move the Blinks Library into the hardware folder
-5. Restart Arduino (quit and relaunch)
+3. Unzip the Blinks Library into a folder called `avr`
+5. Move the Blinks Library into the `Move38-Blinks-Library` folder (the path will be `~/Documents/Arduino/hardware/Move38-Blinks-Library/avr/`)
+6. Restart Arduino (quit and relaunch)
 
 If you click on `Tools` in your menu bar, and navigate down to `Board:`  you should now see `Move38: Blinks Tile` at the bottom. Select it.
 
@@ -75,7 +74,7 @@ For the extra curious, here is the [source code](https://github.com/sparkfun/Poc
 3. Restart Arduino if it was open
 4. Now select the `Blinks Programmer` when programming and it should be roughly 4x faster upload speeds ⚡
 
-Not seeing `Blinks Programmer`? Try out [these steps](http://forum.move38.com/t/faster-upload-time-directory-change-and-modified-programmers-txt/83), found by Alpha Blinks Dev, Ken 🙂 
+Not seeing `Blinks Programmer`? Try out [these steps](http://forum.move38.com/t/faster-upload-time-directory-change-and-modified-programmers-txt/83), found by Alpha Blinks Dev, Ken 🙂
 
 
 ## Using the Blinks Service Port to talk to or listen to your Blink
@@ -102,5 +101,6 @@ Here is the simplest of ServicePort sketches:
 
 ## Unboxing And Walkthrough Video
 
-And last but not least, [here’s a handy little unboxing video](https://www.youtube.com/watch?v=UA1Vl7x3Y7g) that will walk you through some basics!
+{% include youtubePlayer.html id='UA1Vl7x3Y7g' %}
 
+And last but not least, [here’s a handy little unboxing video](https://www.youtube.com/watch?v=UA1Vl7x3Y7g) that will walk you through some basics!
